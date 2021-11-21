@@ -49,3 +49,6 @@ alter table addressbook_table add name varchar(30),type varchar(30);
 update addressbook_table set name='addressbook1', type='family';
 update addressbook_table set name='contactbook1', type='school' where frist_name='pratiksha';
 update addressbook_table set name='contactbook1', type='school' where frist_name='karishma';
+
+-------------------UC10------------------
+select count(phonenumber) as No_of_contact from addressbook_table group by type;
