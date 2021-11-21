@@ -42,3 +42,10 @@ select count(city) as size_of_Addressbook from addressbook_table ;
 
 --------------------UC8---------------------
 select * from addressbook_table order by frist_name asc  ;
+
+-------------------UC9------------------------
+select * from addressbook_table;
+alter table addressbook_table add name varchar(30),type varchar(30);
+update addressbook_table set name='addressbook1', type='family';
+update addressbook_table set name='contactbook1', type='school' where frist_name='pratiksha';
+update addressbook_table set name='contactbook1', type='school' where frist_name='karishma';
