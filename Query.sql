@@ -36,3 +36,6 @@ delete from addressbook_table where frist_name='vaishali';
 
 ------------------------UC6 Retrive Data---------------
 select * from addressbook_table where city='solapur' or state='maharashtra';
+
+----------------------UC7 Size-----------------
+select count(city) as size_of_Addressbook from addressbook_table ; 
