@@ -39,3 +39,6 @@ select * from addressbook_table where city='solapur' or state='maharashtra';
 
 ----------------------UC7 Size-----------------
 select count(city) as size_of_Addressbook from addressbook_table ; 
+
+--------------------UC8---------------------
+select * from addressbook_table order by frist_name asc  ;
